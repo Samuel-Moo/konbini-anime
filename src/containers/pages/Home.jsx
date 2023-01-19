@@ -1,13 +1,14 @@
 import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/layout"
+import Homelanding from "components/home/Home"
 
 function Home(){
     return(
         <Layout>
             <Navbar/>
             <div className="pt-28">
-                Home    
+                Home
             </div>
             <Footer/> 
         </Layout>
