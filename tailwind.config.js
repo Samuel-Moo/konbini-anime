@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "boton1":'#146ca4'
+      }
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
