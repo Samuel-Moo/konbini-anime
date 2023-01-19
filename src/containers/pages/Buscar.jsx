@@ -2,15 +2,16 @@ import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/layout"
 
-function Error404(){
+function Buscar(){
     return(
         <Layout>
             <Navbar/>
-                <div className='pt-32'>
-                    Error404
-                </div>
-            <Footer/>
+            <div className="pt-28">
+                Buscar
+            </div>
+            <Footer/> 
         </Layout>
     )
 }
-export default Error404
+
+export default Buscar
