@@ -5,7 +5,7 @@ import Homelanding from "components/home/Home"
 
 function Home(){
     return(
-        <Layout>
+        <Layout data-theme="mosquera">
             <Navbar/>
             <div className="pt-28">
                 Home
