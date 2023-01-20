@@ -1,18 +1,17 @@
 import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/layout"
-import Homelanding from "components/home/Home"
 
-function Home(){
+function Buscar(){
     return(
         <Layout>
             <Navbar/>
             <div className="pt-28">
-                Home
+                Buscar
             </div>
             <Footer/> 
         </Layout>
     )
 }
 
-export default Home 
+export default Buscar

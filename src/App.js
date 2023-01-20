@@ -3,7 +3,11 @@ import Error404 from "containers/errors/Error404";
 import Home from "containers/pages/Home";
 import store from "store";
 import { Provider } from "react-redux";
-import {LoginButton, LogoutButton} from "containers/pages/login"
+import Anime from "containers/pages/Anime";
+import Manga from "containers/pages/Manga";
+import Buscar from "containers/pages/Buscar";
+import LoginCreate from "containers/pages/LoginCreate";
+/* import {LoginButton, LogoutButton} from "containers/pages/login"; */
 import Counter from "containers/pages/counter";
 
 function App() {
@@ -16,6 +20,18 @@ function App() {
 
           {/* Home Display */}
           <Route path="/" element={<Home />} />
+
+          {/*Anime page */}
+          <Route path="/Anime" element={<Anime />} />
+
+          {/*Manga page */}
+          <Route path="/Manga" element={<Manga />} />
+
+          {/*Buscar page */}
+          <Route path="/Buscar" element={<Buscar />} />
+
+          {/*Login page */}
+          <Route path="/LoginCreate" element={<LoginCreate />} />
 
           {/* 
           <Route path="/login" element={< LoginButton /> }/>
