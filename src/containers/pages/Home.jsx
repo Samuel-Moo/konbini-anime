@@ -2,16 +2,18 @@ import Footer from "components/navigation/Footer"
 
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/layout"
-import Homelanding from "components/home/Home"
+
 
 function Home(){
     return(
         <Layout data-theme="mosquera">
-                <Navbar/>
+                <Navbar>
                 <div className="pt-28">
-                    Home
+                    Konnichiwa
+                    <button className="invisible btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-primary "> Nuevo Descubrimiento </button>
                 </div>
-                <Footer/>       
+                <Footer/>
+                </Navbar>     
         </Layout>
     )
 }
