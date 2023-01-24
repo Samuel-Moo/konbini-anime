@@ -3,35 +3,56 @@ import { NavLink } from "react-router-dom"
 import Logo1 from 'assets/images/logo_1.jpg'
 import Logo2 from 'assets/images/Logo_2.jpg'
 
-function Navbar(){
+function Navbar({children}){
     return(
-        <nav className='w-full py-10 shadow-md fixed'>   
-            <div className="bg-white px-4 sm:px-6">
-                  <div className="-ml-4 -mt-2 flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
-                    <div className="ml-4 mt-2">
-                      
-                      <img src={Logo2} 
-                      width={100}
-                      height={70} 
-                       className=""/>
-                    </div>
-                    <div className="ml-4 mt-2 flex-shrink-0">
-                        <NavLink to="/" className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4">Home</NavLink>
-                        <NavLink to="/Anime" className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4">Anime</NavLink>
-                        <NavLink to="/Manga" className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4">Manga</NavLink>
-                        <NavLink to="/Buscar" className="text-lg inline-flex font-medium leading-6 text-gray-900 mx-4">Buscar</NavLink>
-                      <button
+      <div className="drawer">
+      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
+      <div className="drawer-content flex flex-col">
+          {/* Navbar */}
+          <div className="sticky top-0 w-full navbar bg-base-300">
+              <div className="flex-none lg:hidden">
+                  <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                  </label>
+              </div> 
+          <div className="flex-1 px-2 mx-2">
+            <button>Konbini Anime</button>
+          </div>
+          <div className="flex-none hidden lg:block">
+              <ul className="menu menu-horizontal">
+           {/* Navbar menu content here */}
+                  <li><a>Anime</a></li>
+                  <li><a>Manga</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Contact</a></li>
 
-                        type="button"
-                        className="ml-12 relative inline-flex items-center rounded-md border border-transparent bg-boton1 px-6 py-3 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        Iniciar Sesión / Crear Cuenta
-                      </button>
-                    </div>
-                  </div>
-                </div>
-        </nav>
+              </ul>
+          </div>
+          <div className="form-control">
+            <input type="text" placeholder="Search" className="input input-bordered" />
+          </div>
+          </div>
+  {/* Page content here */}
+      {children}{/*no le metan contenido aqui */}
+      
+      </div> 
+      <div className="drawer-side">
+          <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 
+          <ul className="menu p-4 w-80 bg-base-100">
+      {/* Sidebar content here */}
+              <li><a>Anime</a></li>
+              <li><a>Manga</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+
+          </ul>
+
+      </div>
+  </div>
     )
 }
+
+
 
 const mapStateToProps=state=>({
 
@@ -39,3 +60,4 @@ const mapStateToProps=state=>({
 export default connect(mapStateToProps,{
 
 }) (Navbar)
+
