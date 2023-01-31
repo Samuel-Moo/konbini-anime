@@ -11,8 +11,15 @@ function Home(){
                 <div className="pt-28">
                     Konnichiwa
                     <button className="invisible btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-primary "> Nuevo Descubrimiento </button>
+                    <iframe 
+                    src="https://www.fembed.com/v/py13gum5eq77dwe"
+                    width="100%"  
+                    height="200%" 
+                    frameborder="0" 
+                    allowfullscreen>
+                    </iframe>
                 </div>
-                <Footer/>
+                {/* <Footer/> */}
                 </Navbar>     
         </Layout>
     )
