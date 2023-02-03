@@ -1,17 +1,15 @@
 import Footer from "components/navigation/Footer"
-import Video from "components/content/Video"
+import Favorites from "components/Favorited/Favorites"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/layout"
 
-
-function Home(){
+function Favorited(){
     return(
         <Layout data-theme="mosquera">
                 <Navbar>
-                
-                    <Video/>
-                    Konnichiwa
-                    <button className="invisible btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-primary "> Nuevo Descubrimiento </button>
+                    
+                    <Favorites/>
+                    
                     
                
                 {/* <Footer/> */}
@@ -20,4 +18,4 @@ function Home(){
     )
 }
 
-export default Home 
+export default Favorited 
