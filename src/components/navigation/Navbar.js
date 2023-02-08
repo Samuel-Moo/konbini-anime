@@ -36,7 +36,7 @@ function Navbar({children}){
             <input type="text" placeholder="Search" className="input input-bordered" />
           </div>
           </div>
-  
+          
       {children}{/*no le metan contenido aqui */}
       
       </div> 

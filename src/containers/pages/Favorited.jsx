@@ -12,7 +12,7 @@ function Favorited(){
                     
                     
                
-                {/* <Footer/> */}
+                <Footer/> 
                 </Navbar>     
         </Layout>
     )
