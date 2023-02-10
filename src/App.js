@@ -9,6 +9,7 @@ import Buscar from "containers/pages/Buscar";
 import LoginCreate from "containers/pages/LoginCreate";
 /* import {LoginButton, LogoutButton} from "containers/pages/login"; */
 import Counter from "containers/pages/counter";
+import Favorited from "containers/pages/Favorited";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
 
           {/*Manga page */}
           <Route path="/Manga" element={<Manga />} />
+
+          {/*Favorites page */}
+          <Route path="/Favorited" element={<Favorited />}/>
 
           {/*Buscar page */}
           <Route path="/Buscar" element={<Buscar />} />
