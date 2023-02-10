@@ -2,7 +2,7 @@ import Footer from "components/navigation/Footer"
 import Video from "components/content/Video"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/layout"
-import sergio from 'assets/images/sergio.jpg'
+import sergio from "assets/images/sergio.jpg"
 
 
 function Home(){
@@ -11,7 +11,7 @@ function Home(){
                 <Navbar>
                 
                     <Video/>
-                    Konnichiwa, el slider como componente po favo y gracias
+                    Konnichiwa
                     <div className="carousel w-full">
                         <div id="slide1" className="carousel-item relative w-full">
                             <img src = {sergio} alt = "sergio" className="w-full" />

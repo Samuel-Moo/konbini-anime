@@ -1,5 +1,8 @@
 import React from 'react';
-function Slider(props) {
+function Slider() {
+    return{
+        
+    }
 }
 
 

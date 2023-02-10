@@ -1,14 +1,22 @@
 import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/layout"
+import sergio from "assets/images/sergio.jpg"
+import platinum from "assets/images/platinum.jpg"
+import drpiedrota from "assets/images/drpiedrota.jpg"
+import logo_1 from "assets/images/logo_1.jpg"
+import Logo_2 from "assets/images/Logo_2.jpg"
+
+
+
 
 function Anime(){
     return(
         <Layout>
             <Navbar>
             <div class="grid grid-cols-3 gap-4">
-                <div className="card w-96 bg-base-100 shadow-xl" top>
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="anime" /></figure>
+                <div className="card-compact w-96 bg-base-100 shadow-xl" top>
+                    <figure><img src={sergio} alt="anime" className="w-full" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
                             Sergio 
@@ -22,8 +30,8 @@ function Anime(){
                     </div>
                 </div>
 
-                <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="anime" /></figure>
+                <div className="card-compact w-96 bg-base-100 shadow-xl">
+                    <figure><img src={drpiedrota} alt="anime" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
                         dr stone
@@ -37,8 +45,8 @@ function Anime(){
                     </div>
                 </div>
 
-                <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="anime" /></figure>
+                <div className="card-compact w-96 bg-base-100 shadow-xl">
+                    <figure><img src={platinum} alt="anime" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
                         platinum end
@@ -52,14 +60,14 @@ function Anime(){
                     </div>
                 </div>
             
-                <div className="card w-96 bg-base-100 shadow-xl" top>
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="anime" /></figure>
+                <div className="card-compact w-96 bg-base-100 shadow-xl" top>
+                    <figure><img src={sergio} alt="anime" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
-                            Sergio 
+                            Sergio 2
                             <div className="badge badge-secondary">NEW</div>
                         </h2>
-                        <p>Anime demo</p>
+                        <p>Anime demo 4</p>
                         <div className="card-actions justify-end">
                             <div className="badge badge-outline">Anime</div> 
                             <div className="badge badge-outline">Fresh</div>
@@ -67,14 +75,14 @@ function Anime(){
                     </div>
                 </div>
 
-                <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="anime" /></figure>
+                <div className="card-compact w-96 bg-base-100 shadow-xl">
+                    <figure><img src={logo_1} alt="anime" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
-                        dr stone
+                        wa
                             <div className="badge badge-secondary">NEW</div>
                         </h2>
-                        <p>anime demo 2</p>
+                        <p>anime demo 5</p>
                         <div className="card-actions justify-end">
                             <div className="badge badge-outline">Anime</div> 
                             <div className="badge badge-outline">Fresh</div>
@@ -82,14 +90,14 @@ function Anime(){
                     </div>
                 </div>
 
-                <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="anime" /></figure>
+                <div className="card-compact w-96 bg-base-100 shadow-xl">
+                    <figure><img src={Logo_2} alt="anime" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
-                        platinum end
+                        konbi life
                             <div className="badge badge-secondary">NEW</div>
                         </h2>
-                        <p>anime demo 3</p>
+                        <p>anime demo 6</p>
                         <div className="card-actions justify-end">
                             <div className="badge badge-outline">Anime</div> 
                             <div className="badge badge-outline">Fresh</div>
