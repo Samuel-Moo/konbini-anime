@@ -8,9 +8,13 @@ function LoginCreate(){
     return(
         <Layout>
             <Navbar>
-                <Login/>
+                <div className="grid grid-cols-2">
+                    
+                    <div><SignUp/></div>
                 
-                <SignUp/>
+                    <div><Login/></div>
+                </div>
+                <Footer/>
             </Navbar>
 
         </Layout>
