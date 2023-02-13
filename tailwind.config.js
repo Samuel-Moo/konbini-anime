@@ -7,15 +7,15 @@ module.exports = {
     themes: [
       {
       mosquera: {
-          "primary": "#056f87", 
-          "secondary": "#2cba9b",
+          "primary": "#292524", 
+          "secondary": "#1c1917",
           "accent": "#00feeb",
           "neutral": "#221F2D",
-          "base-100": "#363959",
-          "info": "#46A0C3",
+          "base-100": "#44403c",
+          "info": "#b91c1c",
           "success": "#12A178",
           "warning": "#D4B208", 
-          "error": "#F45F48",        
+          "error": "#F45F48"        
         },
       },
     ],
