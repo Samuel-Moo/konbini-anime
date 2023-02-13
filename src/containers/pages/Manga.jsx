@@ -11,14 +11,14 @@ function Manga(){
         <Layout>
             <Navbar>
                 
-                <div>Manga</div>
+            <div className="py-4"><h1 className="text-3xl text-center font-bold">Manga</h1></div>
             <div class="grid grid-cols-3 gap-4">
-                <div className="card-compact w-96 bg-base-100 shadow-xl" top>
+                <div className="card-compact w-48 bg-base-100 rounded-lg" top>
                     <figure><img src= {loveiswar} alt="manga" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
                             Love is war 
-                            <div className="badge badge-secondary">NEW</div>
+                            <div className="badge badge-info">NEW</div>
                         </h2>
                         <p>Manga demo</p>
                         <div className="card-actions justify-end">
@@ -29,12 +29,12 @@ function Manga(){
                     </div>
                 </div>
 
-                <div className="card-compact w-96 bg-base-100 shadow-xl">
+                <div className="card-compact w-48 bg-base-100 rounded-lg">
                     <figure><img src={drstone} alt="manga" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
                         dr stone
-                            <div className="badge badge-secondary">NEW</div>
+                            <div className="badge badge-info">NEW</div>
                         </h2>
                         <p>manga demo 2</p>
                         <div className="card-actions justify-end">
@@ -44,12 +44,12 @@ function Manga(){
                     </div>
                 </div>
 
-                <div className="card-compact w-96 bg-base-100 shadow-xl">
+                <div className="card-compact w-48 bg-base-100 rounded-lg">
                     <figure><img src={oshi} alt="manga" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
                         oshi no ko
-                            <div className="badge badge-secondary">NEW</div>
+                            <div className="badge badge-info">NEW</div>
                         </h2>
                         <p>manga demo 3</p>
                         <div className="card-actions justify-end">
