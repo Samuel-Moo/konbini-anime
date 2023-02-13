@@ -27,7 +27,7 @@ function Navbar({children}){
                   <li><a href="/Anime">Anime</a></li>
                   <li><a href="/Manga">Manga</a></li>
                   <li><a href="/Favorited">Favorited</a></li>
-                  <li><a href="/Log in">Log in</a></li>
+                  <li><a href="/LoginCreate">Log in</a></li>
                   
 
               </ul>
