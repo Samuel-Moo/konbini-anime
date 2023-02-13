@@ -17,7 +17,7 @@ function Anime(){
         <Layout>
             <Navbar>
                 <div className="py-4"><h1 className="text-3xl text-center font-bold">Anime</h1></div>
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-6 gap-4">
                 <div className="card-compact w-48 bg-warning rounded-lg" top>
                     <figure><img src={sergio} alt="anime" className="w-full rounded-t-lg" /></figure>
                     <div className="card-body">
@@ -101,6 +101,20 @@ function Anime(){
                             <div className="badge badge-info">NEW</div>
                         </h2>
                         <p>anime demo 6</p>
+                        <div className="card-actions justify-end">
+                            <div className="badge badge-outline">Anime</div> 
+                            
+                        </div>
+                    </div>
+                </div>
+                <div className="card-compact w-48 bg-warning rounded-lg" top>
+                    <figure><img src={sergio} alt="anime" className="w-full rounded-t-lg" /></figure>
+                    <div className="card-body">
+                        <h2 className="card-title">
+                            Sergio 
+                            <div className="badge badge-info">NEW</div>
+                        </h2>
+                        <p>"Sergio es el ninja de mi colegio que enfrenta demonios para encontrar paz y al enemigo que lo despojo de su amada".</p>
                         <div className="card-actions justify-end">
                             <div className="badge badge-outline">Anime</div> 
                             
