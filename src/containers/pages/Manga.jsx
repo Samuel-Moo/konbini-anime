@@ -35,7 +35,7 @@ function Manga(){
                     <figure><img src={drstone} alt="manga" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
-                        Dr. Stone
+                        Dr. Stonee
                             <div className="badge badge-info">NEW</div>
                             
                         </h2>
